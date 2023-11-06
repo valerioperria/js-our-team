@@ -46,8 +46,12 @@ for (let key in teamMembers) {
 
     teamDom.innerHTML +=
         `
+        <div class="card">
+        <img class="foto" src="img/${teamMembers[key].foto}" alt="">
+        <div class="info">
         <div class="nome">${teamMembers[key].nome}</div> 
         <div class="ruolo">${teamMembers[key].ruolo}</div>
-        <div class="ruolo">${teamMembers[key].foto}</div>
+        </div> 
+        </div>
         `
 }
